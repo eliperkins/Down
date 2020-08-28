@@ -14,7 +14,7 @@ import WebKit
 
 // MARK: - Public API
 
-public typealias DownViewClosure = () -> ()
+public typealias DownViewClosure = (DownView) -> ()
 
 open class DownView: WKWebView {
 
@@ -210,7 +210,7 @@ extension DownView: WKNavigationDelegate {
     }
     
     public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        didLoadSuccessfully?()
+        didLoadSuccessfully?(self)
     }
     
 }
