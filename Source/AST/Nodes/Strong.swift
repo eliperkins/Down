@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import libcmark
+import libcmarkc
 
 public class Strong: BaseNode {}
 

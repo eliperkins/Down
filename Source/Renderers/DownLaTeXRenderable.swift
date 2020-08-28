@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import libcmark
+import libcmarkc
 
 public protocol DownLaTeXRenderable: DownRenderable {
     func toLaTeX(_ options: DownOptions, width: Int32) throws -> String

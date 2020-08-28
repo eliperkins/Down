@@ -8,7 +8,7 @@
 
 #if !os(Linux)
 import Foundation
-import libcmark
+import libcmarkc
 
 public protocol DownAttributedStringRenderable: DownHTMLRenderable, DownASTRenderable {
     func toAttributedString(_ options: DownOptions, stylesheet: String?) throws -> NSAttributedString

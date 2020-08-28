@@ -17,7 +17,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "libcmark",
+            name: "libcmarkc",
             dependencies: [],
             path: "Source/cmark",
             exclude: ["include"],
@@ -25,7 +25,7 @@ let package = Package(
         ),
         .target(
             name: "Down",
-            dependencies: ["libcmark"],
+            dependencies: ["libcmarkc"],
             path: "Source/",
             exclude: ["cmark", "Down.h"]
         ),

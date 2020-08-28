@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import libcmark
+import libcmarkc
 
 public protocol DownXMLRenderable: DownRenderable {
     func toXML(_ options: DownOptions) throws -> String

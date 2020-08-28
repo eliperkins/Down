@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import libcmark
+import libcmarkc
 
 public struct DownOptions: OptionSet {
     public let rawValue: Int32

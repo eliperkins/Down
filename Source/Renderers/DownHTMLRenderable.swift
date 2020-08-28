@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import libcmark
+import libcmarkc
 
 public protocol DownHTMLRenderable: DownRenderable {
     func toHTML(_ options: DownOptions) throws -> String
